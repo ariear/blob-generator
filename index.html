@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.15.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                fontFamily: {
+                    'pupylinux': ['"Poppins"', 'sans-serif']
+                },
+            }
+          }
+        }
+      </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col justify-center items-center bg-blue-200 min-h-screen">
+
+<div class="bg-white p-7 box-border rounded-xl w-[90vw] md:w-[430px] flex flex-col justify-center items-center relative">
+  <div class="kotak w-[270px] h-[270px] bg-green-400 mb-10"></div>
+  <div class="flex flex-col mb-5">
+      <input type="range" min="0" max="100" value="0" id="range1" class="set-radius range range-accent w-[270px] mb-4" style="pointer-events: auto;" />
+      <input type="range" min="0" max="100" value="0" id="range2" class="set-radius range range-accent w-[270px] mb-4" style="pointer-events: auto;" />
+      <input type="range" min="0" max="100" value="0" id="range3" class="set-radius range range-accent w-[270px] mb-4" style="pointer-events: auto;" />
+      <input type="range" min="0" max="100" value="0" id="range4" class="set-radius range range-accent w-[270px]" style="pointer-events: auto;" />
+  </div>
+  <input type="text" id="displayed" class="input input-bordered input-success w-full" readonly />
+
+  <img src="/asset/information.png" class="info w-[30px] absolute top-3 left-3" alt="">
+</div>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/script.js"></script>
+</body>
+</html>
